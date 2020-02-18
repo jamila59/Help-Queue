@@ -1,6 +1,6 @@
 function Example() {
   return (
-   <div>
+    <div>
       <style jsx global>{`
         .color-toggle {
           background-color: green;
@@ -12,7 +12,7 @@ function Example() {
       <div className="color-toggle">
         <p>Wouldn't it be cool if this text changed colors on hover!? It will now!</p>
       </div>
-  </div>
+    </div>
   );
 }
 

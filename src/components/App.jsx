@@ -6,20 +6,20 @@ import NewTicketControl from './NewTicketControl';
 
 
 class App extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
       masterTicketList: []
     };
     this.handleAddingNewTicketToList = this.handleAddingNewTicketToList.bind(this);
-    //needed this
   }
-  
-handledAddingNewTicketToList(newTicket){
-  var newMasterTicketList = this.state.masterTicketList.slice();
-  newMasterTicketList.push(newTicket);
-  this.setState({masterTicketList: newMasterTicketList});
-}
+
+  handleAddingNewTicketToList(newTicket){
+    var newMasterTicketList = this.state.masterTicketList.slice();
+    newMasterTicketList.push(newTicket);
+    this.setState({masterTicketList: newMasterTicketList});
+  }
 
   render(){
     return (
@@ -32,5 +32,7 @@ handledAddingNewTicketToList(newTicket){
       </div>
     );
   }
+
+
 }
 export default App;
